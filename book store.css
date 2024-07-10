@@ -1,0 +1,149 @@
+
+
+
+
+
+
+
+.head {
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #183b56;
+    padding: 15px;
+}
+
+.bg-container {
+    background-color: #1b1b1b;
+    height: 103vh;
+    width: 50vh;
+    padding: 18px;
+}
+
+.head2 {
+    color: #ffffff;
+    font-family: "Bree serif";
+    font-size: 30px;
+}
+.card-container {
+    height:35vh;
+    background-color: #ffffff;
+    border-radius: 5px;
+   
+}
+
+.imge1 {
+    height: 30vh;
+}
+
+.card-align {
+    padding: 20px;
+}
+.head3 {
+    font-family: "Bree serif";
+    font-size: 22px;
+    color: #183b56;
+
+}
+
+.para2 {
+    font-family: "Bree serif";
+
+
+}
+
+.pa {
+    color: #183b56;
+    font-family: "Bree serif";
+}
+.he {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: "Bree serif";
+    padding-top: 10px;
+
+}
+
+.img1 {
+    height: 25vh;
+}
+
+.all {
+    color: #ffffff;
+    padding-left: 20px;
+
+}
+
+.ha {
+    font-size: 20px;
+    font-family: "Bree serif";
+}
+
+.p {
+    font-family: "Bree serif";
+
+}
+
+.bt {
+    margin-left: 20px;
+
+}
+
+.img2 {
+    padding-top: 15px;
+}
+
+.al {
+    padding-top: 15px;
+}
+
+.con {
+    margin: 20px;
+    height: 115vh;
+
+}
+
+.edit {
+    height: 45vh;
+    padding-left: 80px;
+
+
+
+}
+
+.page {
+    text-align: center;
+}
+
+.hh {
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Bree serif";
+
+
+}
+
+.pas {
+    color: #183b56;
+    font-family: "Bree serif";
+    text-align: center;
+
+}
+
+.pera {
+    color: #ffffff;
+    font-family: "Bree serif";
+
+
+}
+
+.buts {
+    margin-left: 80px;
+}
+
+.he {
+    color: #ffffff;
+    font-size: 28px;
+
+}

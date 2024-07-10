@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="visit.css">
+</head>
+
+<body>
+
+    <div id="section-home">
+        <h1 class="head">Book store Home Page</h1>
+        <div class="bg-container">
+            <h1 class="head2">Popular Book</h1>
+            <div class="card-container">
+                <div class="d-flex flex-row">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png" class="imge1">
+                    <div class="card-align">
+                        <h2 class="head3">Wings of Fire</h2>
+                        <p class="para2">An Autobiography of<br>Abdul Kalam</p>
+                        <p class="pa">by Arun Tiwari</p>
+                        <button onclick="showBookDetails('firebook')" class="btn btn-primary">Read Now</button>
+                    </div>
+                </div>
+            </div>
+            <h1 class="he">Recommended Books</h1>
+            <div class="d-flex flex-row">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png" class="img1">
+                <div class="all">
+                    <h3 class="all ha">The 3 mistakes of my life</h3>
+                    <p class="all p">Indian Author</p>
+                    <p class="all p ">by Chetan Bhagat</p>
+                    <button onclick="showBookDetails('mistakesbook')" class="btn btn-primary bt">Read Now</button>
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png" class="img1 img2">
+                <div class="all al">
+                    <h3 class="all ha">Harry Potter</h3>
+                    <p class="all p">and the sorcerer's Stone</p>
+                    <p class="all p ">by J.K Rowling</p>
+                    <button onclick="showBookDetails('harrypotterbook')" class="btn btn-primary bt">Read Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="firebook" class="book-details" style="display: none;">
+        <h1 class="head">Wings of Fire book detail page</h1>
+        <div class="bg-container con d-flex flex-row justify-content-center">
+            <div class="page">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png" class="imge1 edit">
+                <h2 class="hh">Wings of Fire</h2>
+                <P class="pas">by Arun Tiwari</P>
+                <p class="pera">Every common man who by his sheer grit and hard work achieves success should share his
+                    story with the rest for they may find inspiration and strength to go on in this story. 'The Wings of
+                    Fire' is one such autobiography by visionary scientist Dr. APJ Abdul Kalam, who from very humble
+                    beginnings rose to be the President of India. The book is full of insights, personal moments and life
+                    experiences of Dr. Kalam. It gives an understanding on his journey of success.</p>
+                <button onclick="showHomePage()" class="btn btn-warning buts">Back</button>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mistakesbook" class="book-details" style="display: none;">
+        <h1 class="head">The 3 mistakes of my life book details Page</h1>
+        <div class="bg-container con d-flex flex-row justify-content-center">
+            <div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png" class="imge1 edit">
+                <h2 class="he">The 3 mistakes of my life</h2>
+                <P class="pas">by Chetan Bhagat</P>
+                <p class="pera">The 3 Mistakes of my life is the third novel written by eminent Indian author Chetan
+                    Bhagat. Based on cricket, business and religion, the novel is set against the backdrop of the beautiful city
+                    Ahmedabad. Revolving around three young Indian boys Omi, Ishaan and Govind, the book goes on to
+                    narrate how the three are trying their best to make ends meet in the city. Based on real events, the
+                    book starts with a dramatic twist, where Bhagat is reading an e-mail sent by a young person
+                    Govind.</p>
+                <button onclick="showHomePage()" class="btn btn-warning buts">Back</button>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="harrypotterbook" class="book-details" style="display: none;">
+        <h1 class="head">Harry Potter book details Page</h1>
+        <div class="bg-container con d-flex flex-row justify-content-center">
+            <div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png" class="imge1 edit">
+                <h2 class="hh">Harry Potter</h2>
+                <P class="pas">by J.K. Rowling</P>
+                <p class="pera">Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless
+                    relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he
+                    receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor
+                    rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and
+                    Wizardry. After a lifetime of bottling up his magical powers, Harry finally feels like a normal kid.</p>
+                <button onclick="showHomePage()" class="btn btn-warning buts">Back</button>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showBookDetails(bookId) {
+            // Hide all book details
+            document.querySelectorAll('.book-details').forEach(function (element) {
+                element.style.display = 'none';
+            });
+            // Hide home section
+            document.getElementById('section-home').style.display = 'none';
+            // Show selected book details
+            document.getElementById(bookId).style.display = 'block';
+        }
+
+        function showHomePage() {
+            // Hide all book details
+            document.querySelectorAll('.book-details').forEach(function (element) {
+                element.style.display = 'none';
+            });
+            // Show home section
+            document.getElementById('section-home').style.display = 'block';
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
